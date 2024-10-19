@@ -21,17 +21,17 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 75px;
-  padding: 0 40px;
   background-color: #e5e8e8;
 }
 
 .box-ul {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   align-items: center;
   padding: 10px;
-  width: 450px;
+  width: 345px;
   height: 50px;
+  margin-left: 30px;
 }
 
 .box-ul li a {
@@ -40,11 +40,16 @@ nav {
   font-size: large;
 }
 
+.box-ul li a:hover {
+  color: brown;
+}
+
 .para {
   color: goldenrod;
   font-weight: bold;
   font-size: x-large;
   padding-right: 20px;
+  margin: 0 30px;
 }
 
 .header-img {
@@ -144,6 +149,8 @@ footer {
   flex-wrap: wrap;
   gap: 80px;
   margin-bottom: 30px;
+  text-align: center;
+  justify-content: center;
 }
 
 .foot-ul li a {
@@ -152,18 +159,18 @@ footer {
   color: black;
 }
 
-@media (min-width: 550px) {
+.foot-ul li a:hover {
+  color: goldenrod;
+}
+
+@media (min-width: 500px) {
   #footform input {
     width: 500px;
   }
 }
 
-@media (min-width: 1000) {
+@media (min-width: 900) {
   #footform input {
     width: 800px;
-  }
-
-  .box-ul {
-    gap: 90px;
   }
 }
