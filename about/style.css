@@ -1,5 +1,6 @@
 /* header, footer font */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
 
 * {
   margin: 0;
@@ -60,6 +61,64 @@ nav {
 }
 
 /*  main */
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  min-height: 600px;
+  margin: 80px 30px 30 px 30px;
+}
+
+.pic-container {
+  max-height: 350px;
+}
+
+div.pic {
+  width: 350px;
+  height: 300px;
+  background-color: black;
+  position: relative;
+  left: -100px;
+  top: 50px;
+}
+
+img[alt="about us"] {
+  width: 600px;
+  max-height: 500px;
+  z-index: 20;
+  position: relative;
+  top: -225px;
+  left: -75px;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 150px;
+  font-family: "Playwrite GB S", cursive;
+}
+
+.main-info button {
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: goldenrod;
+  color: azure;
+  font-size: larger;
+  font-weight: bold;
+  border: none;
+  box-shadow: 4px 4px 6px 2px darkgrey;
+}
+
+.main-info button:hover {
+  background-color: white;
+  color: goldenrod;
+  border: 2px solid goldenrod;
+}
 
 /* footer */
 footer {
